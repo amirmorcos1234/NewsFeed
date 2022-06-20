@@ -1,22 +1,23 @@
 import React from "react";
-import { Image, Text, View, ViewStyle } from "react-native";
+import { Image, Text, TouchableOpacity, View, ViewStyle } from "react-native";
 
 import styles from './NewsFeedItem.style'
 
 type NewsFeedProps={
     overrideContainerStyle?:ViewStyle,
     heading:string,
-    image:string
+    image:string,
+    onPress:()=>void
 }
 const NewsFeedItem:React.FC<NewsFeedProps>=(props)=>{
-    const {heading,image,overrideContainerStyle}=props
+    const {heading,image,overrideContainerStyle,onPress}=props
     return (
-    <View style={[styles.newsFeedItemContainer,overrideContainerStyle]}>
+    <TouchableOpacity onPress={onPress} style={[styles.newsFeedItemContainer,overrideContainerStyle]}>
     <Text>{heading}</Text>
     <Image
     style={styles.image}
      source={{uri:image}}/>
-</View>
+</TouchableOpacity>
     )
 }
 
