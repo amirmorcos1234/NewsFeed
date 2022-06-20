@@ -1,9 +1,7 @@
 import axios from '../../network/api'
 
-class ArticleService{
-    getArticles(search=''){
-        return axios.get(endpoints.ARTICLES(search))
-    }
-}
+import endpoints from '../../network/endpoints'
 
-export default new ArticleService()
+export const getArticles=(search='')=>{
+        return axios.get(endpoints.ARTICLES(search))   
+}

@@ -1,12 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import { View } from "react-native";
-
+import { MainScreen } from "../scenes";
 
 const AppContainer=()=>{
 return (
     <NavigationContainer>
-        <View/>
+                <MainScreen/>
         </NavigationContainer>
 )
 }
