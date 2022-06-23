@@ -1,8 +1,11 @@
 import { StyleSheet } from 'react-native'
-import { scale, verticalScale } from '../../styles/scaling'
+import { moderateScale, scale, verticalScale } from '../../styles/scaling'
 import themes from '../../styles/theme'
 
 export default StyleSheet.create({
+  title: {
+    fontSize: moderateScale(20)
+  },
   languageContainer: {
     shadowColor: '#000',
     shadowOffset: {
