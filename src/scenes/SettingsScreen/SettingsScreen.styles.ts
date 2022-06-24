@@ -1,22 +1,14 @@
 import { StyleSheet } from 'react-native'
+import { shadowing } from '../../styles/ApplicationStyle'
 import { moderateScale, scale, verticalScale } from '../../styles/scaling'
-import themes from '../../styles/theme'
 
 export default StyleSheet.create({
   title: {
     fontSize: moderateScale(20)
   },
   languageContainer: {
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    backgroundColor: themes.white,
-    paddingTop: verticalScale(20),
+    ...shadowing,
+    paddingTop: verticalScale(5),
     paddingHorizontal: scale(15),
     paddingBottom: verticalScale(25),
     borderRadius: 12,
@@ -24,5 +16,11 @@ export default StyleSheet.create({
   },
   content: {
     margin: scale(25)
+  },
+  langContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: verticalScale(20)
   }
 })

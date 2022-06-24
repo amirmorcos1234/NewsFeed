@@ -1,10 +1,16 @@
 const en = {
-  translate: {
-    hi: "Hi",
-    exploreDay: "Explore your Day",
-    error: "Something went error",
-    retry: "Retry",
-    published: "Published At",
+  translation: {
+    main: {
+      hi: "Hi",
+      exploreDay: "Explore your Day",
+    },
+    common: {
+      error: "Something went error",
+      retry: "Retry",
+    },
+    details: {
+      published: "Published At",
+    },
   },
 };
 

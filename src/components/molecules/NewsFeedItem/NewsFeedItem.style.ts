@@ -1,21 +1,13 @@
 import { StyleSheet } from 'react-native'
+import { shadowing } from '../../../styles/ApplicationStyle'
 import { verticalScale } from '../../../styles/scaling'
-import themes from '../../../styles/theme'
 
 export default StyleSheet.create({
   newsFeedItemContainer: {
     marginTop: verticalScale(10),
     paddingTop: verticalScale(15),
     paddingHorizontal: verticalScale(20),
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    backgroundColor: themes.white,
+    ...shadowing,
     width: '100%',
     borderRadius: 12
   },

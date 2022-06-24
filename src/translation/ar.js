@@ -1,10 +1,16 @@
 const ar = {
-  translate: {
-    hi: "مرحبًا",
-    exploreDay: "استكشف يومك",
-    error: "حدث خطأ ما",
-    retry: "إعادة المحاولة",
-    published: "نشرت في",
+  translation: {
+    main: {
+      hi: "مرحبًا",
+      exploreDay: "استكشف يومك",
+    },
+    common: {
+      error: "حدث خطأ ما",
+      retry: "إعادة المحاولة",
+    },
+    details: {
+      published: "نشرت في",
+    },
   },
 };
 
