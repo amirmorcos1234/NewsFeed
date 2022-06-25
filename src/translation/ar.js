@@ -7,9 +7,16 @@ const ar = {
     common: {
       error: "حدث خطأ ما",
       retry: "إعادة المحاولة",
+      changeLang: "تغيير اللغة",
     },
     details: {
       published: "نشرت في",
+    },
+    news: {
+      title: "الأخبار",
+    },
+    settings: {
+      title: "الإعدادات",
     },
   },
 };

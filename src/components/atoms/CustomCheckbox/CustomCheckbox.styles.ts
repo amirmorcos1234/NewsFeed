@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native'
 import { scale } from '../../../styles/scaling'
+import themes from '../../../styles/theme'
 
 export default StyleSheet.create({
   container: {
     borderWidth: 1,
-    borderColor: 'grey',
+    borderColor: themes.grey,
     width: scale(30),
     height: scale(30),
     borderRadius: 50,
@@ -12,7 +13,7 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   checked: {
-    backgroundColor: 'red',
+    backgroundColor: themes.red,
     width: scale(20),
     height: scale(20),
     borderRadius: 50

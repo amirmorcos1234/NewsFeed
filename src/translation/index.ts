@@ -3,6 +3,7 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import en from './en'
 import ar from './ar'
+import { I18nManager } from 'react-native'
 
 i18n
 
@@ -21,9 +22,12 @@ i18n
       en,
       ar
     },
+    lng: I18nManager.isRTL ? 'ar' : 'en',
     fallbackLng: 'en',
     debug: true,
     interpolation: {
       escapeValue: false // not needed for react as it escapes by default
     }
   })
+
+export default i18n

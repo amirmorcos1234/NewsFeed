@@ -9,13 +9,16 @@ export default StyleSheet.create({
   },
   welcome: {
     fontSize: moderateScale(20),
-    color: themes.black
+    color: themes.black,
+    textAlign: 'left'
   },
   title: {
     fontSize: moderateScale(15),
     color: themes.black,
     marginTop: verticalScale(8),
-    marginBottom: verticalScale(10)
+    marginBottom: verticalScale(10),
+    textAlign: 'left'
+
   },
   contentList: {
     paddingBottom: verticalScale(30)

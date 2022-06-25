@@ -16,6 +16,7 @@ export default StyleSheet.create({
   input: {
     padding: 0,
     fontSize: moderateScale(15),
-    width: '100%'
+    width: '100%',
+    textAlign: 'left'
   }
 })

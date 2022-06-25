@@ -7,9 +7,16 @@ const en = {
     common: {
       error: "Something went error",
       retry: "Retry",
+      changeLang: "Change Language",
     },
     details: {
       published: "Published At",
+    },
+    news: {
+      title: "News",
+    },
+    settings: {
+      title: "Settings",
     },
   },
 };

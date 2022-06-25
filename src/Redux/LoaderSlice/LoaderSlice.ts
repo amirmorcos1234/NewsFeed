@@ -5,7 +5,7 @@ interface LoadingState {
 }
 
 const initialState: LoadingState = {
-  loading: false,
+  loading: false
 }
 
 const loaderSlice = createSlice({
@@ -13,15 +13,15 @@ const loaderSlice = createSlice({
   initialState,
   reducers: {
     showLoader: state => {
-      state.loading=true
+      state.loading = true
     },
     hideLoader: state => {
       state.loading = false
-    },
-   
-  },
+    }
+
+  }
 })
 
-export const { hideLoader,showLoader} = loaderSlice.actions
+export const { hideLoader, showLoader } = loaderSlice.actions
 
 export default loaderSlice.reducer
